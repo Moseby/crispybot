@@ -1,5 +1,6 @@
 import myscripts from "../../components/data/scripts";
 import Link from "next/link";
+import Image from "next/image";
 
 // Chip color tags
 const categoryColors: Record<string, string> = {
@@ -16,7 +17,7 @@ export default function scripts() {
         {myscripts.map((script) => (
           <Link key={script.id} href={`/scripts/${script.id}`}>
             <div className="cursor-pointer">
-              <img
+              <Image
                 src={script.thumbnail}
                 alt={script.title}
                 className="w-full h-48 object-cover "

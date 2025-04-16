@@ -15,8 +15,7 @@ const Bebas = Bebas_Neue({
   })
 
 // Icons import
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -77,26 +76,26 @@ const Nav = () => {
             </Link></div>
             <div className="flex md:items-center md:mx-auto font-mono font-bold">
               <ul className="hidden md:flex text-white transition duration-500">
-                <a href="/">
+                <Link href="/">
                   <li className="uppercase text-xl border-b-2 border-transparent hover:border-b-2 hover:text-[#cac492] transition duration-500">
                     <p className={Bebas.className}>Home</p>
                   </li>
-                </a>
-                <a href="/scripts">
+                </Link>
+                <Link href="/scripts">
                   <li className="ml-10 uppercase text-xl border-b-2 border-transparent hover:border-b-2 hover:text-[#cac492] transition duration-500">
                   <p className={Bebas.className}>Scripts</p>
                   </li>
-                </a>
-                <a href="/faq">
+                </Link>
+                <Link href="/faq">
                   <li className="ml-10 uppercase text-xl border-b-2 border-transparent hover:border-b-2 hover:text-[#cac492] transition duration-500">
                   <p className={Bebas.className}>Faq</p>
                   </li>
-                </a>
-                <a href="/#kontakt">
+                </Link>
+                <Link href="/#kontakt">
                   <li className="ml-10 uppercase text-xl border-b-2 border-transparent hover:border-b-2 hover:text-[#cac492] transition duration-500">
                   <p className={Bebas.className}>Contact</p>
                   </li>
-                </a>
+                </Link>
               </ul>
               <div
                 onClick={handleNav}
