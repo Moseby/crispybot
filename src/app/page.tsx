@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaShieldHeart } from "react-icons/fa6";
 import { FaRobot } from "react-icons/fa";
